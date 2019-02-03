@@ -1,0 +1,564 @@
+@font-face {
+  font-family: "myfont";
+  src: url(./font/9bc654f4f1821f47f8dedc11e54a6971.ttf);
+}
+
+@font-face {
+  font-family: "myfont2";
+  src: url(./font/Freight\ Sans\ Book.otf);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.user__menu {
+  display: flex;
+}
+
+.user__intro {
+  padding: 20px 0;
+  background-color: #23292f;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.user__list {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
+.user__list li {
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "myfont", sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.user__list li span {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: gray;
+  font-family: "myfont", sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.list__item-active {
+  border-left: 5px solid #ff503f;
+  background-color: transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.user__list .list__item:nth-child(2)::before {
+  display: block;
+  position: absolute;
+  top: -38px;
+  left: 34px;
+  content: url(./img/Trenner.png)
+}
+
+.user__list .list__item:nth-child(2)::after {
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 34px;
+  content: url(./img/Trenner.png)
+}
+
+.user__list .list__item img {
+  width: 46px;
+}
+
+.user__list .list__item a {
+  text-decoration: none;
+}
+
+.user__dashboard {
+  width: 100%;
+  min-height: 100vh
+}
+
+.users__image-wrapper {
+  position: relative;
+}
+
+.users__online-icon {
+  position: absolute;
+  background-color: #aacc4e;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.dashboard__header {
+  padding: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.dashboard__reload {
+  position: relative;
+  font-family: "myfont", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #c8c8c8;
+  border-radius: 30px;
+  color: #4b4b4b;
+  font-weight: 100;
+  left: 57px;
+}
+
+.dashboard__reload::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff503f;
+  background-image: url(./img/ICON.png);
+  background-repeat: no-repeat;
+  background-position: 9px;
+  background-size: 22px;
+  width: 42px;
+  height: 42px;
+  right: 130px;
+  top: 0;
+  cursor: pointer;
+}
+
+.dashboard__users {
+  position: absolute;
+  font-family: "myfont", sans-serif;
+  font-size: 16px;
+  padding: 10px 45px;
+  border: 1px solid #c8c8c8;
+  border-radius: 30px;
+  color: #787878;
+  font-weight: 100;
+  right: 30px;
+  cursor: pointer;
+  list-style-type: none
+}
+
+.dashboard__user button {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.dashboard__user button span {
+  position: relative;
+  top: -2px;
+}
+
+.dashboard__user button::before {
+  position: absolute;
+  content: url(./img/ICONchat.png);
+  right: 118px;
+}
+
+.dashboard__user button::after {
+  position: absolute;
+  content: url(./img/Arrowuser.png);
+  right: -26px;
+  top: -1px;
+}
+
+.dashboard__user::before {
+  content: "";
+  position: absolute;
+  background-image: url(./img/Arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #aacc4e;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  right: 210px;
+  top: 0;
+  cursor: pointer;
+}
+
+.projects__menu {
+  height: 80px;
+  border-bottom: 1px solid #d3d7da;
+  border-top: 1px solid #d3d7da;
+  background-color: #f1f1f1;
+  display: flex
+}
+
+.projects__menu button {
+  height: 100%;
+  width: 265px;
+  font-family: "myfont", sans-serif;
+  position: relative;
+  font-size: 24px;
+  color: #4b4b4b;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.menu__projects::before {
+  position: absolute;
+  content: "";
+  background-image: url(./img/time.png);
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+  left: 18px;
+  top: 26px;
+}
+
+.menu__messages {
+  border-left: 1px solid #d3d7da;
+  border-right: 1px solid #d3d7da;
+}
+
+.menu__messages::before {
+  position: absolute;
+  content: "";
+  background-image: url(./img/message.png);
+  width: 47px;
+  height: 29px;
+  background-size: cover;
+  left: 18px;
+  top: 26px;
+}
+
+.dashboard__main {
+  padding: 24px;
+}
+
+.main__projects {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  width: 75%;
+  position: relative;
+}
+
+.projects__search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  justify-content: space-between;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 40%;
+  font-size: 22px;
+  font-family: 'myfont', sans-serif;
+}
+
+.search__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-input::placeholder {
+  font-family: 'myfont2', sans-serif;
+  font-size: 22px;
+  color: #c1c1c1;
+}
+
+.main__users {
+  list-style: none;
+  font-family: 'myfont', sans-serif;
+  font-size: 16px;
+  color: #4b4b4b;
+  border: 1px solid #d5d5d5#d5d5d5;
+  border-radius: 20px;
+  padding: 5px 50px 5px 20px;
+  position: relative;
+}
+
+.main__users::after {
+  position: absolute;
+  content: "";
+  background-image: url(./img/Arrowuser.png);
+  background-repeat: no-repeat;
+  right: 20px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+}
+
+.main__users span {
+  color: #878787;
+  font-family: 'myfont2', sans-serif;
+}
+
+.new__project {
+  border-radius: 50%;
+  background-color: #ff503f;
+  background-image: url(./img/plus.png);
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.project__wrapper {
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  font-family: 'myfont', sans-serif;
+  font-size: 22px;
+  color: #575757;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project__wrapper div {
+  display: flex;
+  align-items: center;
+}
+
+.project__completion {
+  background-color: #ff503f;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.project__tag {
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+  font-size: 14px;
+}
+
+.project__search {
+  border-radius: 50%;
+  border: 1px solid #d5d5d5;
+  background-image: url(./img/search.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 18px;
+  margin: 0 10px;
+}
+
+.project__name {
+  margin-left: 15px;
+}
+
+.projects__archive {
+  border-top: 1px solid #d5d5d5;
+  padding: 20px 0;
+  font-family: 'myfont';
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+  text-align: unset;
+  cursor: pointer;
+}
+
+.projects__archive span {
+  margin-left: 30px;
+  color: #4b4b4b;
+}
+
+.projects__archive img {
+  transform: rotate(270deg);
+  margin-left: 10px;
+}
+
+.project__inner {
+  border-radius: 50%;
+  border: 1px solid #d5d5d5;
+  background-image: url(./img/Arrowuser.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 18px;
+}
+
+.project__btn {
+  display: flex;
+}
+
+.project__btn button:hover {
+  background-color: #ff503f;
+  cursor: pointer;
+  color: white;
+}
+
+.project__btn .project__search:hover {
+  background-image: url(./img/search-white.png)
+}
+
+.project__btn .project__inner:hover {
+  background-image: url(./img/Arrow.png)
+}
+
+.projects__list {
+  overflow-y: auto;
+  max-height: calc(100vh - 338px);
+  /* 600px; */
+}
+
+.projects__list::-webkit-scrollbar, .users__wrapper::-webkit-scrollbar {
+  width: 7px;
+}
+
+.projects__list::-webkit-scrollbar-track, .users__wrapper::-webkit-scrollbar-track {
+  border: none;
+  box-shadow: none;
+}
+
+.projects__list::-webkit-scrollbar-thumb, .users__wrapper::-webkit-scrollbar-thumb {
+  background: #dbddde;
+  border-radius: 10px;
+}
+
+.main__activity {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  width: 25%;
+  margin-left: 15px;
+  position: relative;
+}
+
+.users__wrapper {
+  overflow-y: scroll;
+  max-height: calc(100vh - 303px);
+  /* 639px; */
+}
+
+.activity__archive {
+  border-top: 1px solid #d5d5d5;
+  padding: 20px 0;
+  font-family: 'myfont';
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+  text-align: unset;
+  cursor: pointer;
+}
+
+.activity__archive span {
+  margin-left: 30px;
+  color: #4b4b4b;
+}
+
+.activity__archive img {
+  transform: rotate(270deg);
+  margin-left: 10px;
+}
+
+.users__activity {
+  display: flex;
+  padding: 25px 30px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.user__activity {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.user__message, .user__time {
+  font-size: 18px;
+  font-family: "myfont", sans-serif;
+  color: #bcbcbc;
+}
+
+.user__message span {
+  color: black
+}
+
+.user__time {
+  text-transform: uppercase;
+}
+
+.dashboard__users:hover .users__online {
+  display: block;
+}
+
+.users__online {
+  position: absolute;
+  left: -40px;
+  top: 42px;
+  list-style: none;
+  display: none;
+  -webkit-animation: myfirst 5s linear 2s infinite alternate;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+.users__online li {
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  padding: 10px 43px;
+  margin-top: 5px;
+  background-color: white;
+  z-index: 10;
+}
+
+.users__online button {
+  text-transform: uppercase;
+}
+
+.tab {
+  display: none;
+}
+
+.active {
+  background-color: white !important;
+  border: none !important;
+  height: 101% !important;
+}
+
+.projects__notification {
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  padding: 2px 10px;
+  top: 13px;
+  right: 42px;
+  font-size: 18px;
+}
+
+.projects__menu .gray {
+  right: 24px;
+}
+
+.red {
+  background-color: #ff503f;
+}
+
+.gray {
+  background-color: #adadad;
+}

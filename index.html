@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>CMR</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <div class="user__menu">
+      <div class="user__intro">
+        <img src="./img/profile.png" alt="">
+        <ul class="user__list">
+          <li class="list__item list__item-active ">
+            <a href="#">
+              <img src="./img/car.png" alt="" srcset="">
+              <span>Board</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#">
+              <img src="./img/Projects.png" alt="" srcset="">
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#">
+              <img src="./img/Settings_Icon.png" alt="" srcset="">
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="user__list bottom">
+          <li>
+            <a href="#">
+              <img src="./img/Upgrad_Icon.png" alt="" srcset="">
+              <span>Upgrade</span>
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/Logout_Icon.png" alt="" srcset="">
+              <span>Logout</span>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+      <div class="user__dashboard">
+        <header class="dashboard__header">
+          <button class="dashboard__reload">Dashboard</button>
+          <ul class="dashboard__users">
+            <li class="dashboard__user">
+              <button><span>5</span> user online</button>
+            </li>
+            <li class="users__list">
+              <ul class="users__online">
+                <li><button>user 1 online</button></li>
+                <li><button>user 2 online</button></li>
+                <li><button>user 3 online</button></li>
+              </ul>
+            </li>
+          </ul>
+        </header>
+        <section class="dashboard__projects">
+          <header class="projects__menu">
+            <button id="active" class="menu__projects btn__menu active">Active Projects <span class="projects__notification gray" >9</span> </button>
+            <button id="message" class="menu__messages btn__menu">Messenger <span class="projects__notification red">2</span> </button>
+          </header>
+          <div class="dashboard__main tab">
+            <div class="main__projects">
+              <div class="projects__search">
+                <input class="search-input" type="text" placeholder="Search a Project with Name, Task, User..." name="search">
+                <div class="search__wrapper">
+                  <ul class="main__users">
+                    <li><button>New Projects <span>(descending)</span></button></li>
+                  </ul>
+                  <button class="new__project"></button>
+                </div>
+              </div>
+              <div class="projects__list">
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">23%</span>
+                    <span class="project__name">Create Contact Formular</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">worlda</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">87%</span>
+                    <span class="project__name">Create Subpage PSD</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">Panorama</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">83%</span>
+                    <span class="project__name">Layout & implementation in HTML & CSS</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">Ebay Relaunch</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">23%</span>
+                    <span class="project__name">CLorem ipsum dolor sit amet, elitr, sed diam nonumy eirmod temp</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">Panorama</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">98%</span>
+                    <span class="project__name">Create Contact Formular</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">worlda</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">87%</span>
+                    <span class="project__name">Create Subpage PSD</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">worlda</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+                <div class="project__wrapper">
+                  <div>
+                    <span class="project__completion">87%</span>
+                    <span class="project__name">Create Subpage PSD</span>
+                  </div>
+                  <div class="project__btn">
+                    <button class="project__tag">worlda</button>
+                    <button class="project__search"></button>
+                    <button class="project__inner"></button>
+                  </div>
+                </div>
+              </div>
+              <button class="projects__archive">
+                <span>Project Archiv</span>
+                <img src="./img/Arrowuser.png" alt="" srcset="">
+              </button>
+            </div>
+            <div class="main__activity">
+              <div class="users__wrapper">
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+                <div class="users__activity">
+                  <div class="users__image-wrapper">
+                    <span class="users__online-icon"></span>
+                    <img src="./img/user__active.png" alt="">
+                  </div>
+                  <div class="user__activity">
+                    <span class="user__message"> <span>Mark P.</span> add an Image into Worlda</span>
+                    <span class="user__time">Today, 10:00 PM</span>
+                  </div>
+                </div>
+              </div>
+              <button class="activity__archive">
+                <span>Activity Archiv</span>
+                <img src="./img/Arrowuser.png" alt="" srcset="">
+              </button>
+            </div>
+          </div>
+          <div class="message tab"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
