@@ -36,3 +36,18 @@ function myFunction() {
   var element = document.getElementById("myDIV");
   element.classList.toggle("mystyle");
 }
+
+(function () {
+  var main = document.querySelectorAll('.project__outer');
+  for (var i = 0; i < main.length; i++) {
+    var block = main[i];
+    block.addEventListener('click', function (e) {
+      var lol = e.currentTarget.querySelector('.projects__completition');
+      if(lol.style.display==='none'){
+        lol.style.display="flex"
+      } else{
+        lol.style.display = "none"
+      }
+    })
+  }
+})();

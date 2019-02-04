@@ -10,6 +10,10 @@
   font-family: "helvetica";
   src: url(../../font/HelveticaNeueCyr-Thin.ttf); }
 
+@font-face {
+  font-family: "myriad";
+  src: url(../../font/MyriadPro-Regular.ttf); }
+
 button {
   outline: none;
   cursor: pointer; }
@@ -39,15 +43,20 @@ button {
     border-radius: 50%;
     border: 2px solid white; }
   .user__intro .projects__notification {
-    border-radius: 50%;
-    color: white;
-    position: absolute;
-    padding: 2px 7px;
-    top: 20px;
     right: 20px;
-    font-size: 18px;
-    font-family: "helvetica", sans-serif;
-      font-family-font-weight: bold; }
+    top: 20px;
+    padding: 4px 8px; }
+
+.projects__notification {
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  padding: 4px 8px;
+  top: 13px;
+  right: 42px;
+  font-size: 14px;
+  font-family: 'helvetica';
+  font-weight: bold; }
 
 .bottom {
   position: absolute;
@@ -331,7 +340,8 @@ button {
   border-radius: 20px;
   padding: 10px;
   border: 1px solid #d5d5d5;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: 'myriad'; }
 
 .project__search {
   border-radius: 50%;
@@ -357,6 +367,45 @@ button {
   text-align: unset;
   cursor: pointer; }
 
+.projects__completition {
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  font-family: 'myfont', sans-serif;
+  font-size: 22px;
+  color: #bebebe;
+  padding: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  background-color: #f7f7f7; }
+  .projects__completition .project__completion {
+    background-color: #f7f7f7;
+    color: #cfcfcf;
+    border: 1px solid #d5d5d5; }
+  .projects__completition .project__tag {
+    color: #565656; }
+  .projects__completition .project__users {
+    display: flex;
+    justify-content: space-evenly;
+    height: 41px; }
+  .projects__completition .project__head {
+    width: 55%; }
+  .projects__completition .users__more {
+    padding: 5px 9px;
+    border: 1px solid #d5d5d5;
+    color: #d5d5d5;
+    border-radius: 50%; }
+  .projects__completition .users__more:hover {
+    background-color: #ff503f;
+    color: white; }
+  .projects__completition .search {
+    margin-right: 0; }
+  .projects__completition .project__make-users {
+    display: flex; }
+  .projects__completition .project__make-users div:nth-child(2) {
+    margin: 0 5px; }
+
 .projects__archive span {
   margin-left: 30px;
   color: #4b4b4b; }
@@ -375,17 +424,22 @@ button {
 
 .project__btn {
   display: flex; }
+  .project__btn .inner {
+    font-family: "helvetica";
+    margin: 0 10px;
+    background-image: none;
+    padding: 4px 8px;
+    border-radius: 50%;
+    border: 1px solid #d5d5d5; }
+  .project__btn .project__search:hover {
+    background-image: url(../../img/search-white.png); }
+  .project__btn .project__inner:hover {
+    background-image: url(../../img/Arrow.png); }
 
 .project__btn button:hover {
   background-color: #ff503f;
   cursor: pointer;
   color: white; }
-
-.project__btn .project__search:hover {
-  background-image: url(../../img/search-white.png); }
-
-.project__btn .project__inner:hover {
-  background-image: url(./img/Arrow.png); }
 
 .projects__list {
   overflow-y: auto;
@@ -484,17 +538,6 @@ button {
   background-color: white !important;
   border: none !important;
   height: 101% !important; }
-
-.projects__notification {
-  border-radius: 50%;
-  color: white;
-  position: absolute;
-  padding: 2px 8px;
-  top: 13px;
-  right: 42px;
-  font-size: 18px;
-  font-family: 'helvetica', sans-serif;
-  font-weight: bold; }
 
 .projects__menu .gray {
   right: 24px; }
