@@ -17,11 +17,11 @@ gulp.task('sass', function () {
 gulp.task('image', () =>
   gulp.src('assets/img/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/img/*'))
+    .pipe(gulp.dest('assets/img/'))
 );
 
 gulp.task("sass:watch", () => watchSass([
-  "assets/styles/sass/*sass"
+  "assets/styles/sass/"
 ])
   .pipe(sass())
   .pipe(gulp.dest("assets/styles/css")));
