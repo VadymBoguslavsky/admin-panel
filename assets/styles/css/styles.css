@@ -100,7 +100,11 @@ button {
   border-radius: 50%;
   color: white;
   position: absolute;
-  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
   top: 13px;
   right: 42px;
   font-size: 14px;
@@ -557,7 +561,8 @@ button {
   padding: 10px 43px;
   margin-top: 5px;
   background-color: white;
-  z-index: 10; }
+  z-index: 10;
+  position: relative; }
 
 .users__online button {
   text-transform: uppercase; }
