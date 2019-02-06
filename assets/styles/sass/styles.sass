@@ -33,6 +33,55 @@ button
     padding: 0
     text-align: center
     width: 100%
+    flex-direction: column
+    li
+      margin: 20px 0px
+      display: flex
+      align-items: center
+      flex-direction: column
+      color: white
+      font-family: "myfont", sans-serif
+      font-size: 16px
+      position: relative
+    span
+      margin: 10px 0px
+      display: flex
+      align-items: center
+      flex-direction: column
+      color: gray
+      font-family: "myfont", sans-serif
+      font-size: 16px
+      position: relative
+    .list__item-active
+      position: relative
+    .list__item-active:before
+      position: absolute
+      left: 0
+      content: ""
+      height: 100%
+      width: 5px
+      border-left: 5px solid #ff503f
+      background-color: transparent
+      border-top: 5px solid transparent
+      border-bottom: 5px solid transparent
+    .dots:nth-child(2) a::before 
+      display: block
+      position: absolute
+      top: -30px
+      left: 50px
+      content: url(../../img/Trenner.png)
+    .dots:nth-child(2) a::after 
+      display: block
+      position: absolute
+      top: 75px
+      left: 50px
+      content: url(../../img/Trenner.png)
+    .list__item img 
+      width: 46px
+    .list__item a 
+      text-decoration: none
+      width: 100%
+      position: relative
   .user__img-icon
     position: absolute
     background-color: #aacc4e
@@ -60,47 +109,6 @@ button
   position: absolute
   bottom: 10px
   a
-    text-decoration: none
-
-.user__list 
-  li
-    margin: 30px 0px
-    display: flex
-    align-items: center
-    flex-direction: column
-    color: white
-    font-family: "myfont", sans-serif
-    font-size: 16px
-    position: relative
-  span
-    margin: 10px 0px
-    display: flex
-    align-items: center
-    flex-direction: column
-    color: gray
-    font-family: "myfont", sans-serif
-    font-size: 16px
-    position: relative
-  .list__item-active
-    border-left: 5px solid #ff503f
-    background-color: transparent
-    border-top: 5px solid transparent
-    border-bottom: 5px solid transparent
-  .list__item:nth-child(2)::before 
-    display: block
-    position: absolute
-    top: -38px
-    left: 34px
-    content: url(../../img/Trenner.png)
-  .list__item:nth-child(2)::after 
-    display: block
-    position: absolute
-    top: 75px
-    left: 34px
-    content: url(../../img/Trenner.png)
-  .list__item img 
-    width: 46px
-  .list__item a 
     text-decoration: none
 
 .user__dashboard 
@@ -406,7 +414,7 @@ button
     justify-content: space-evenly
     height: 41px
   .project__head
-    width: 55%  
+    // width: 55%  
   .users__more
     padding: 5px 9px
     border: 1px solid #d5d5d5

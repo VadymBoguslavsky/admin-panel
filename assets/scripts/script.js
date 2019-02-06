@@ -51,3 +51,17 @@ function myFunction() {
     })
   }
 })();
+
+
+(function () {
+  var main = document.querySelectorAll('.list__item');
+  for (var i = 0; i < main.length; i++) {
+    var all = main[i];
+    all.addEventListener('click', function (e) {
+      var remove = document.querySelector('.list__item-active')
+      remove.classList.remove('list__item-active')
+      e.currentTarget.classList.add('list__item-active')
+    })
+  }
+})();
+
